@@ -1,12 +1,18 @@
-import SignUp from './Components/signup/signup'
+import Org from './Components/pages/org';
+import SignIn from './Components/pages/signin';
 
-function App () {
+function App() {
   return (
-    <div className='w-full flex items-center justify-center'>
-        <SignUp />
+    <div className='flex h-screen'>
+      <div className='w-1/2 flex items-center justify-center bg-white'>
+        <SignIn />
+      </div>
+      
+      <div className='w-1/2 flex items-center justify-center bg-white'>
+        <Org />
+      </div>
     </div>
   );
 }
 
 export default App;
-
