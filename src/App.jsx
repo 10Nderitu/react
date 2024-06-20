@@ -1,5 +1,25 @@
 import Org from './Components/pages/org';
 import SignIn from './Components/pages/signin';
+import "./index.css";
+import * as ReactDOM from "react-dom/client";
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: < App/>,
+  },
+]);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <RouterProvider router = {router} />
+)
 
 function App() {
   return (
