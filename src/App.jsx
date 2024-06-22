@@ -1,5 +1,6 @@
 import Org from './Components/pages/org';
 import SignIn from './Components/pages/signin';
+import SignUp from './Components/pages/signup';
 import "./index.css";
 import * as ReactDOM from "react-dom/client";
 
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: < App/>,
+  },
+  {
+    path: "Components/signup",
+    element: < SignUp/>,
   },
 ]);
 
