@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # react
 =======
 # React + Vite
